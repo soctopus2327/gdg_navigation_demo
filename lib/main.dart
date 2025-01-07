@@ -3,6 +3,7 @@ import 'home_page.dart';
 import 'projects_page.dart';
 import 'skills_page.dart';
 import 'contact_page.dart';
+import 'app_demo.dart';
 
 
 void main() {
@@ -19,12 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
-      routes: {
-        '/projects': (context) => ProjectsPage(),
-        '/skills': (context) => SkillsPage(),
-        '/contact': (context) => ContactPage(),
-      }
+      home: CatFactsApp(),
+      // routes: {
+      //   '/projects': (context) => ProjectsPage(),
+      //   '/skills': (context) => SkillsPage(),
+      //   '/contact': (context) => ContactPage(),
+      // }
     );
   }
 }
